@@ -1,4 +1,5 @@
 ﻿Imports System.Web.Optimization
+Imports WHLClasses
 
 Public Class Global_asax
     Inherits HttpApplication
@@ -7,5 +8,7 @@ Public Class Global_asax
         ' Fires when the application is started
         RouteConfig.RegisterRoutes(RouteTable.Routes)
         BundleConfig.RegisterBundles(BundleTable.Bundles)
+
+        Application.Add("EmpCol", New EmployeeCollection)
     End Sub
 End Class
