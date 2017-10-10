@@ -3,7 +3,7 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="MainWindow"
         x:Name="RibbonWindow"
-        Width="753" Height="395"
+        Width="1137" Height="678"
         x:Class="MainWindow">
 
     <Grid x:Name="LayoutRoot">

@@ -3,9 +3,12 @@
 
     Public Sub New(Page As Page)
         Header = Page.Title
-        Dim Frame as new Frame
+        Dim Frame As New Frame
         Frame.Content = Page
-        me.Content = Frame
-        End Sub
+        Me.Content = Frame
+
+    End Sub
+
+
 
 End Class

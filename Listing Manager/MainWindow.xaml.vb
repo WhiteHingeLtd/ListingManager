@@ -36,11 +36,11 @@ Class MainWindow
 #End Region
 
 #Region "MainZone"
-    Private Sub NewTab(Control As object)
-        dim Tab As New PageFrameTab(Control)
-        MainWindowTabControl.Items.add(Tab)
+    Friend Sub NewTab(Control As Object)
+        Dim Tab As New PageFrameTab(Control)
+        MainWindowTabControl.Items.Add(Tab)
         Tab.Focus()
-        MainWindowTabControl.SelectedItem = tab
+        MainWindowTabControl.SelectedItem = Tab
 
     End Sub
 #End Region
@@ -56,7 +56,7 @@ Class MainWindow
     End Sub
 
     Private Sub Views_SalesDashboardButton_Click(sender As Object, e As RoutedEventArgs) Handles Views_SalesDashboardButton.Click
-        NewTab(New Salesdash)
+        NewTab(New SalesDash(Me))
     End Sub
 
 
